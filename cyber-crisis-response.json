@@ -1,0 +1,43 @@
+{
+    "categorize_channel_enabled": true,
+    "category_name": "Variable Compensation Plan",
+    "channel_name_template": "Variable Pay: \u003cemployee_name\u003e",
+    "checklists": [
+        {
+            "title": "During the Quarter",
+            "items": [
+                {
+                    "title": "Do a thing.",
+                    "description": "Detail about the thing that will help give context"
+                },
+                {
+                    "title": "Do another thing",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "End of Quarter",
+            "items": [
+                {
+                    "title": "Do one more thing",
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    "description": "This playbook helps us ensure each employee's variable compensation plan is prepared correctly each and every time.",
+    "message_on_join": "This is an optional markdown message that can be sent to every new channel member for each playbook run.",
+    "message_on_join_enabled": true,
+    "metrics": [],
+    "status_update_enabled": true,
+    "reminder_message_template": "This is a markdown template for the recurring status update.",
+    "reminder_timer_default_seconds": 604800,
+    "retrospective_enabled": true,
+    "retrospective_template": "This is a markdown template for the retrospective after finishing the run.",
+    "run_summary_template": "**About**\nEmployee: [eg. @ian.tien]\nManager: [eg. @ian.tien]\nFiscal Year: [eg. 2023]\nTechnica support: ~developers-playbooks ",
+    "run_summary_template_enabled": true,
+
+    "title": "Variable Compensation Plan",
+    "version": 1
+}
