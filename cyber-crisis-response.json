@@ -1,43 +1,87 @@
 {
     "categorize_channel_enabled": true,
-    "category_name": "Variable Compensation Plan",
-    "channel_name_template": "Variable Pay: \u003cemployee_name\u003e",
+    "category_name": "Calls Closed Beta",
+    "channel_name_template": "Calls Beta: \u003ccustomer_name\u003e",
     "checklists": [
         {
-            "title": "During the Quarter",
             "items": [
                 {
-                    "title": "Do a thing.",
-                    "description": "Detail about the thing that will help give context"
+                    "title": "Fill in customer info in the summary section"
                 },
                 {
-                    "title": "Do another thing",
-                    "description": ""
+                    "title": "Send [overview doc](https://docs.google.com/document/d/1EY_e0e_t26ft7djXSmPPG-KaRRFeReFEPa_X15i-aho/edit#) to customer and confirm interest"
+                },
+                {
+                    "title": "If customer isn't already on community, ask them to [create an account here](https://mattermost.com/community/)"
+                },
+                {
+                    "title": "Add all interested customer users to this dedicated channel"
+                },
+                {
+                    "command": "/call link",
+                    "title": "Schedule a kickoff call for the customer with @tao"
                 }
-            ]
+            ],
+            "title": "Onboard customer"
         },
         {
-            "title": "End of Quarter",
             "items": [
                 {
-                    "title": "Do one more thing",
-                    "description": ""
+                    "title": "Confirm plugin installation on customer's own instance"
+                },
+                {
+                    "description": "Change to v6.5 after March 16th",
+                    "title": "Confirm using server version v6.3 or later"
+                },
+                {
+                    "title": "Confirm using iOS/Android app v1.49 or later"
+                },
+                {
+                    "description": "Change to v5.1 after April 1st",
+                    "title": "Confirm using desktop app v5.04 or later"
+                },
+                {
+                    "title": "Document expected use cases and adoption level"
                 }
-            ]
+            ],
+            "title": "Setup beta"
+        },
+        {
+            "items": [
+                {
+                    "title": "Two weeks after kickoff, review telemetry dashboard for usage"
+                },
+                {
+                    "title": "If inactive, thank the customer and then end by finishing the playbook run"
+                },
+                {
+                    "title": "Perform and publish retro as a team"
+                },
+                {
+                    "title": "Archive channel"
+                }
+            ],
+            "title": "Review learnings"
         }
     ],
-    "description": "This playbook helps us ensure each employee's variable compensation plan is prepared correctly each and every time.",
-    "message_on_join": "This is an optional markdown message that can be sent to every new channel member for each playbook run.",
+    "description": "This walks each customer through the closed beta process as well as creates a space to collaborate and share feedback with us.\n\n**Important: Keep in mind that this playbook is public on the Contributor team. Although the content of the channel will be private however overview and status updates will technically be visible to anyone.**",
+    "message_on_join": "Hello and welcome to the Calls closed beta! \n\nThis channel is where you can collaborate and share feedback with our team throughout the beta program. Here is [an overview document with FAQ](https://docs.google.com/document/d/1EY_e0e_t26ft7djXSmPPG-KaRRFeReFEPa_X15i-aho/edit#) that can provide more context.",
     "message_on_join_enabled": true,
-    "metrics": [],
-    "status_update_enabled": true,
-    "reminder_message_template": "This is a markdown template for the recurring status update.",
+    "metrics": [
+        {
+            "description": "How long did it take to get the customer setup and running? If the customer never engaged, use time until decision to end the beta for them.",
+            "target": 604800000,
+            "title": "Time to rollout",
+            "type": "metric_duration"
+        }
+    ],
+    "reminder_message_template": "**Customer feedback**\n\n\n**Next steps**\n\n",
     "reminder_timer_default_seconds": 604800,
     "retrospective_enabled": true,
-    "retrospective_template": "This is a markdown template for the retrospective after finishing the run.",
-    "run_summary_template": "**About**\nEmployee: [eg. @ian.tien]\nManager: [eg. @ian.tien]\nFiscal Year: [eg. 2023]\nTechnica support: ~developers-playbooks ",
+    "retrospective_template": "### Summarized learnings\nFill in this section after each participant have shared their perspectives below.\n\n### Participant survey\n\n#### \u003cParticipant name\u003e\n**What surprised you?**\n\n**What went as you expected?**\n\n**What should we do differently next time?**\n",
+    "run_summary_template": "**About**\nStatus: [eg. Contacted / Setup / Engaged]\nCustomer contact: [eg. @tao]\nServer version: [eg. v6.5]\nDeployment size: [eg. 1000 users]\nUse Kubernete: [Yes/No]\nUse High Availability: [Yes/No]\n\n**Resources**\nOverview doc: [link](https://docs.google.com/document/d/1EY_e0e_t26ft7djXSmPPG-KaRRFeReFEPa_X15i-aho/edit#)\nDeveloper channel: ~developers-channel-call ",
     "run_summary_template_enabled": true,
-
-    "title": "Variable Compensation Plan",
+    "status_update_enabled": true,
+    "title": "Calls Team: Closed Beta",
     "version": 1
 }
